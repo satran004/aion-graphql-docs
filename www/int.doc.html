@@ -40,6 +40,11 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Scalars</h4>
     <ul>
+        <li  title="Any">
+            <a href="any.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Any
+            </a>
+        </li>
         <li  title="BigInteger">
             <a href="biginteger.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 BigInteger
@@ -60,6 +65,11 @@
                 Long
             </a>
         </li>
+        <li  title="Map">
+            <a href="map.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Map
+            </a>
+        </li>
         <li  title="String">
             <a href="string.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 String
@@ -70,6 +80,11 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
     <ul>
+        <li  title="SolidityType">
+            <a href="soliditytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SolidityType
+            </a>
+        </li>
         <li  title="__DirectiveLocation">
             <a href="directivelocation.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 __DirectiveLocation
@@ -130,9 +145,39 @@
                 ChainQuery
             </a>
         </li>
-        <li  title="CompileResponse">
-            <a href="compileresponse.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                CompileResponse
+        <li  title="Contract">
+            <a href="contract.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Contract
+            </a>
+        </li>
+        <li  title="ContractAbiEntry">
+            <a href="contractabientry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContractAbiEntry
+            </a>
+        </li>
+        <li  title="ContractAbiIOParam">
+            <a href="contractabiioparam.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContractAbiIOParam
+            </a>
+        </li>
+        <li  title="ContractMutator">
+            <a href="contractmutator.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContractMutator
+            </a>
+        </li>
+        <li  title="ContractQuery">
+            <a href="contractquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContractQuery
+            </a>
+        </li>
+        <li  title="ContractResponse">
+            <a href="contractresponse.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContractResponse
+            </a>
+        </li>
+        <li  title="DeployResponse">
+            <a href="deployresponse.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeployResponse
             </a>
         </li>
         <li  title="MsgResp">
@@ -163,6 +208,11 @@
         <li  title="TxnQuery">
             <a href="txnquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 TxnQuery
+            </a>
+        </li>
+        <li  title="TxReceipt">
+            <a href="txreceipt.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TxReceipt
             </a>
         </li>
         <li  title="WalletMutator">
@@ -213,6 +263,31 @@
         <li  title="AccountKeyExportInput">
             <a href="accountkeyexportinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 AccountKeyExportInput
+            </a>
+        </li>
+        <li  title="ContractDeployInput">
+            <a href="contractdeployinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContractDeployInput
+            </a>
+        </li>
+        <li  title="ContractEventFilterInput">
+            <a href="contracteventfilterinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContractEventFilterInput
+            </a>
+        </li>
+        <li  title="ContractFunction">
+            <a href="contractfunction.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContractFunction
+            </a>
+        </li>
+        <li  title="Output">
+            <a href="output.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Output
+            </a>
+        </li>
+        <li  title="Param">
+            <a href="param.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Param
             </a>
         </li>
         <li  title="TxArgsInput">
@@ -275,101 +350,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="block.doc.html" title="Block - scalar Hash256
-scalar Address
-type Block {
-number: Long
-nrgConsumed: Long
-nrgLimit: Long
-bloom: String # ByteArrayWrapper
-extraData: String #ByteArrayWrapper
-solution: String #ByteArrayWrapper
-hash: Hash256
-parentHash: Hash256
-nonce: BigInteger
-difficulty: BigInteger
-totalDifficulty: BigInteger
-minerAddress: Address
-stateRoot: Hash256
-txTrieRoot: Hash256
-size: Int
-txDetails: [TxDetails]
-blockTime: Long
-}">Block<em>scalar Hash256
-scalar Address
-type Block {
-number: Long
-nrgConsumed: Long
-nrgLimit: Long
-bloom: String # ByteArrayWrapper
-extraData: String #ByteArrayWrapper
-solution: String #ByteArrayWrapper
-hash: Hash256
-parentHash: Hash256
-nonce: BigInteger
-difficulty: BigInteger
-totalDifficulty: BigInteger
-minerAddress: Address
-stateRoot: Hash256
-txTrieRoot: Hash256
-size: Int
-txDetails: [TxDetails]
-blockTime: Long
-}</em></a><li><li><a href="txdetails.doc.html" title="TxDetails - type Transaction {
-transactionIndex: Int
-blockNumber: Long
-timeStamp: Long
-nrgConsumed: Long
-nrgPrice: Long
-from: Address
-to: Address
-blockHash: Hash256
-txHash: Hash256
-nonce: BigInteger
-value: BigInteger
-data: String #ByteArrayWrapper
-}
-type TxDetails {
-from: Address
-to: Address
-txHash: Hash256
-value: BigInteger
-nonce: BigInteger
-nrgConsumed: Long
-nrgPrice: Long
-data: String
-txIndex: Int
-contract: Address
-timestamp: Long
-error: String
-}">TxDetails<em>type Transaction {
-transactionIndex: Int
-blockNumber: Long
-timeStamp: Long
-nrgConsumed: Long
-nrgPrice: Long
-from: Address
-to: Address
-blockHash: Hash256
-txHash: Hash256
-nonce: BigInteger
-value: BigInteger
-data: String #ByteArrayWrapper
-}
-type TxDetails {
-from: Address
-to: Address
-txHash: Hash256
-value: BigInteger
-nonce: BigInteger
-nrgConsumed: Long
-nrgPrice: Long
-data: String
-txIndex: Int
-contract: Address
-timestamp: Long
-error: String
-}</em></a><li><li><a href="walletmutator.doc.html" title="WalletMutator - ">WalletMutator<em></em></a><li></ul>
+        <ul class="require-by"><li><a href="block.doc.html" title="Block - ">Block<em></em></a><li><li><a href="chainquery.doc.html" title="ChainQuery - ">ChainQuery<em></em></a><li><li><a href="contractabiioparam.doc.html" title="ContractAbiIOParam - ">ContractAbiIOParam<em></em></a><li><li><a href="txdetails.doc.html" title="TxDetails - ">TxDetails<em></em></a><li><li><a href="walletmutator.doc.html" title="WalletMutator - ">WalletMutator<em></em></a><li></ul>
     </div>
 </section>
 <footer>

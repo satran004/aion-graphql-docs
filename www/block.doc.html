@@ -40,6 +40,11 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Scalars</h4>
     <ul>
+        <li  title="Any">
+            <a href="any.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Any
+            </a>
+        </li>
         <li  title="BigInteger">
             <a href="biginteger.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 BigInteger
@@ -60,6 +65,11 @@
                 Long
             </a>
         </li>
+        <li  title="Map">
+            <a href="map.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Map
+            </a>
+        </li>
         <li  title="String">
             <a href="string.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 String
@@ -70,6 +80,11 @@
 <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
     <h4 class="slds-text-title--caps slds-p-around--medium">Enums</h4>
     <ul>
+        <li  title="SolidityType">
+            <a href="soliditytype.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                SolidityType
+            </a>
+        </li>
         <li  title="__DirectiveLocation">
             <a href="directivelocation.spec.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 __DirectiveLocation
@@ -130,9 +145,39 @@
                 ChainQuery
             </a>
         </li>
-        <li  title="CompileResponse">
-            <a href="compileresponse.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
-                CompileResponse
+        <li  title="Contract">
+            <a href="contract.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Contract
+            </a>
+        </li>
+        <li  title="ContractAbiEntry">
+            <a href="contractabientry.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContractAbiEntry
+            </a>
+        </li>
+        <li  title="ContractAbiIOParam">
+            <a href="contractabiioparam.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContractAbiIOParam
+            </a>
+        </li>
+        <li  title="ContractMutator">
+            <a href="contractmutator.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContractMutator
+            </a>
+        </li>
+        <li  title="ContractQuery">
+            <a href="contractquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContractQuery
+            </a>
+        </li>
+        <li  title="ContractResponse">
+            <a href="contractresponse.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContractResponse
+            </a>
+        </li>
+        <li  title="DeployResponse">
+            <a href="deployresponse.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                DeployResponse
             </a>
         </li>
         <li  title="MsgResp">
@@ -163,6 +208,11 @@
         <li  title="TxnQuery">
             <a href="txnquery.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 TxnQuery
+            </a>
+        </li>
+        <li  title="TxReceipt">
+            <a href="txreceipt.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                TxReceipt
             </a>
         </li>
         <li  title="WalletMutator">
@@ -215,6 +265,31 @@
                 AccountKeyExportInput
             </a>
         </li>
+        <li  title="ContractDeployInput">
+            <a href="contractdeployinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContractDeployInput
+            </a>
+        </li>
+        <li  title="ContractEventFilterInput">
+            <a href="contracteventfilterinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContractEventFilterInput
+            </a>
+        </li>
+        <li  title="ContractFunction">
+            <a href="contractfunction.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                ContractFunction
+            </a>
+        </li>
+        <li  title="Output">
+            <a href="output.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Output
+            </a>
+        </li>
+        <li  title="Param">
+            <a href="param.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
+                Param
+            </a>
+        </li>
         <li  title="TxArgsInput">
             <a href="txargsinput.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 TxArgsInput
@@ -252,28 +327,7 @@
     <div class="container">
         <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
         <h1 class="slds-text-heading--large">Block</h1>
-        <div class="slds-text-body--regular"><p>scalar Hash256
-scalar Address
-type Block {
-number: Long
-nrgConsumed: Long
-nrgLimit: Long
-bloom: String # ByteArrayWrapper
-extraData: String #ByteArrayWrapper
-solution: String #ByteArrayWrapper
-hash: Hash256
-parentHash: Hash256
-nonce: BigInteger
-difficulty: BigInteger
-totalDifficulty: BigInteger
-minerAddress: Address
-stateRoot: Hash256
-txTrieRoot: Hash256
-size: Int
-txDetails: [TxDetails]
-blockTime: Long
-}</p>
-</div>
+        <div class="slds-text-body--regular"></div>
     </div>
 </section>
 <section>
@@ -284,7 +338,7 @@ blockTime: Long
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Block</span> {</li><li></li><li><span class="tab"><span class="meta">number</span>: <a class="support type" href="long.doc.html">Long</a> </span></li><li></li><li><span class="tab"><span class="meta">nrgConsumed</span>: <a class="support type" href="long.doc.html">Long</a> </span></li><li></li><li><span class="tab"><span class="meta">nrgLimit</span>: <a class="support type" href="long.doc.html">Long</a> </span></li><li></li><li><span class="tab"><span class="meta">bloom</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   ByteArrayWrapper</span></span></li><li><span class="tab"><span class="meta">extraData</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   ByteArrayWrapper</span></span></li><li><span class="tab"><span class="meta">solution</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   ByteArrayWrapper</span></span></li><li><span class="tab"><span class="meta">hash</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Hash256</span></span></li><li><span class="tab"><span class="meta">parentHash</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Hash256</span></span></li><li><span class="tab"><span class="meta">nonce</span>: <a class="support type" href="biginteger.doc.html">BigInteger</a> </span></li><li></li><li><span class="tab"><span class="meta">difficulty</span>: <a class="support type" href="biginteger.doc.html">BigInteger</a> </span></li><li></li><li><span class="tab"><span class="meta">totalDifficulty</span>: <a class="support type" href="biginteger.doc.html">BigInteger</a> </span></li><li></li><li><span class="tab"><span class="meta">minerAddress</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Address</span></span></li><li><span class="tab"><span class="meta">stateRoot</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Hash256</span></span></li><li><span class="tab"><span class="meta">txTrieRoot</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="comment line">#   Hash256</span></span></li><li><span class="tab"><span class="meta">size</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="meta">txDetails</span>: [<a class="support type" href="txdetails.doc.html">TxDetails</a>] </span></li><li></li><li><span class="tab"><span class="meta">blockTime</span>: <a class="support type" href="long.doc.html">Long</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Block</span> {</li><li></li><li><span class="tab"><span class="meta">number</span>: <a class="support type" href="long.doc.html">Long</a> </span></li><li></li><li><span class="tab"><span class="meta">nrgConsumed</span>: <a class="support type" href="long.doc.html">Long</a> </span></li><li></li><li><span class="tab"><span class="meta">nrgLimit</span>: <a class="support type" href="long.doc.html">Long</a> </span></li><li></li><li><span class="tab"><span class="meta">bloom</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">extraData</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">solution</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">hash</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">parentHash</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">nonce</span>: <a class="support type" href="biginteger.doc.html">BigInteger</a> </span></li><li></li><li><span class="tab"><span class="meta">difficulty</span>: <a class="support type" href="biginteger.doc.html">BigInteger</a> </span></li><li></li><li><span class="tab"><span class="meta">totalDifficulty</span>: <a class="support type" href="biginteger.doc.html">BigInteger</a> </span></li><li></li><li><span class="tab"><span class="meta">minerAddress</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">stateRoot</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">txTrieRoot</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">size</span>: <a class="support type" href="int.doc.html">Int</a> </span></li><li></li><li><span class="tab"><span class="meta">txDetails</span>: [<a class="support type" href="txdetails.doc.html">TxDetails</a>] </span></li><li></li><li><span class="tab"><span class="meta">blockTime</span>: <a class="support type" href="long.doc.html">Long</a> </span></li><li>}</li></ul></code>
     </div>
 </section>
 <section>
